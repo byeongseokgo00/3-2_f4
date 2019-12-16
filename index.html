@@ -1,0 +1,260 @@
+<!doctype html>
+<html>
+
+<head>
+  <link rel="stylesheet" href="reset.css">
+  <link href="https://fonts.googleapis.com/css?family=Source+Sans+Pro:200,300" rel="stylesheet">
+  <link href="https://fonts.googleapis.com/css?family=Frank+Ruhl+Libre&display=swap" rel="stylesheet">
+  <link href="https://fonts.googleapis.com/css?family=Noto+Sans+KR&display=swap" rel="stylesheet">  
+  <style>
+    body {
+      margin: 0; position: relative;
+    }
+    img{ 
+      width: 200px; position: absolute; top:550px;
+    }
+    .scene {
+      height: 100vh;
+      overflow: hidden;
+      background-attachment: fixed;
+      background-size: cover;
+      font-family: 'Source Sans Pro', sans-serif;
+      font-weight: 200;
+    }
+    .scene.one{
+      background-image: url(img/mars.jpg);
+    }
+    .scene.two{
+    	background-color: #000;
+      /*background-image: url(img/heic1501a.jpg);*/
+    }
+    #s2 {width: 30%; position: absolute; margin-top:0px; margin-left: 0px;}
+    .scene.two-1{
+      background-image: url(img/mars-water.jpg);
+    }
+    .scene.two-2{
+      background-image: url(img/mars-ox.jpg);
+    }
+    .scene.two-3{
+      background-image: url(img/mars-fd.jpg);
+    }
+    .scene.two-4{
+      background-image: url(img/mars-bc.jpg);
+    }
+    .scene.two-5{
+      background-color: #000;
+      /*background-image: url(img/heic1501a.jpg);*/
+    }             
+    .scene.three{
+      background-color: #000; 
+    }
+    .scene.four{
+      background-image: url(img/mars-tp.jpg);
+    }
+
+    .scene header{
+      color:white;
+      max-width: 55%;
+      position: relative;
+      left:50%;
+      top:50%;
+      transform:translateX(-50%) translateY(-50%);
+      font-size:1.5rem;
+      text-align: center;
+      line-height: 2em;
+    }
+    .scene header h1{
+      font-size:2rem;
+      margin-bottom: 1rem;
+      font-weight: 300;
+    }
+    .scene header h1:after{
+      content:'';
+      border-bottom:1px solid white;
+      width:8rem;
+      display: block;
+      margin:0 auto;
+      margin-top:1rem;
+    }
+
+    .circle{
+        width: 1px; height: 15px; border-radius: 100%; background: #fff; position: absolute; animation: rrr 10s infinite ease-in-out;}
+
+
+    #txt2 { text-align: center; margin-top: 300px; }
+    #txt3 { text-align: center; margin-top: 300px; }
+    #txt4 { text-align: center; margin-top: 300px; }
+    #txt5 { text-align: center; margin-top: 300px; }
+    #txt6 { text-align: center; margin-top: 0px; }
+
+    @keyframes rrr{
+      from{ top: 100px; }
+      to{ bottom: 0px; opacity: 1;}
+    }
+
+    @keyframes ro{  to{transform: rotate(360deg);}  }
+    @keyframes le{  from{left:0px;} to{left: 600px;} }
+    @keyframes ri{  from{right:0px;} to{right: 600px;} }
+    @keyframes tt{  from{top:100px; opacity: 0} to{top:50px; opacity: 1} }
+
+    p { font-size: 15px;
+    	line-height: 25px;
+      font-family: 'Noto Sans KR', sans-serif;
+      text-align: justify;
+      text-align-last: center;
+    }
+
+    h1 {  font-family: 'Noto Sans KR', sans-serif;
+    }
+
+    section {position: relative;}
+    .scenefour #at {width: 1000px; position: absolute;}
+
+  footer { width: 100%; height: 200px; background-color: black; }
+
+  footer p { text-align: center; padding-top: 100px; color:white; margin-top: 0px;}
+
+  </style>
+</head>
+
+<body>
+  <section class="scene one">
+    <header id=h1>
+      <h1>화성이주프로젝트<br>과연 우리가 화성에서 살 수 있을까?</h1>
+      <p>인류는 오랜 시간 우주를 꿈꿔왔다. 처음 달에 첫발을 내디딘 지 47년, 이제 우리의 목표는 저 붉은 별, 화성이다. 외계 생명체가 존재하는지를 알아내기 위해 시작한 화성 탐사는 새로운 국면으로 접어들었다. 바로 인간이 화성에서 ‘거주’할 가능성을 모색하는 것이다. 화성으로의 이주는 과연 꿈같은 이야기일까?</p>
+    </header>
+  </section>
+
+  <section class="scene two">
+    <header>
+      <h1>화성에서 살기 위해 극복해야 할 4가지</h1>5 things to overcome to live on Mars
+    </header>
+  </section>
+
+  <section class="scene two-1">
+    <img src="mars-w.jpg" id="t2">
+    <header id="txt2">
+      <h1>1. 물</h1><p>“산소 공급을 받지 못한 상태로 4분이 지나면 인체는 뇌 손상을 입는다. 산소가 결핍된 곳에서 사망하기 전까지 버틸 수 있는 시간은 15분 정도로 알려져 있다. 그러나 화성에서 산소를 찾을 수 있을 것이라고 기대하는 사람은 없다. 우리가 직접 산소를 만들어야 한다. 그러기 위해서는 물이 필요하다. 만약 화성에서 물을 찾을 수 있다면 물에 전류를 통과시켜 이루어지는 간단한 전기분해를 비롯하여 여러 가지 방법으로 산소를 만들 수 있다. 표토를 처리하거나, 드릴로 땅을 파서 물을 찾거나, 화성의 표면에서 커다란 얼음덩어리를 캐내려는 초기 우주비행사들의 모든 시도가 처참한 실패로 돌아간다면 어떻게 해야 할까? 좋은 대안이 있다. 우리는 1976년에 최초로 화성에 안전하게 착륙한 NASA의 바이킹 우주선을 통해 화성의 대기가 옅기는 하지만 축축하게 젖어 있으며, 대기의 습도가 100퍼센트에 달하는 경우도 많다는 사실을 알게 되었다.</p>
+    </header>
+  </section>
+
+  <section class="scene two-2">
+    <img src="mars-o.jpg" id="t3">
+    <header id="txt3">
+      <h1>2. 산소</h1><p>“다행히 NASA는 이미 이 산소 문제에 대한 대책을 세워 두었다. 2020년에 발사되는 큐리어시티의 후속 탐사 로버는 화성의 대기 중에 있는 이산화탄소를 산소와 일산화탄소로 바꾸는 일종의 연료 전지를 운반할 예정이다. 이 장비는 MOXIE라고 부르며, 이는 화성 산소 현장자원 활용 실험(MARS OXYGEN IN-SITU RESOURCES UTILIZATION EXPERIMENT)의 줄임말이다. MOXIE는 물의 전기분해와 비슷한 원리를 이용하지만 대기 중에서 고열 세라믹을 사용한다는 차이점이 있다. “세라믹을 통과하는 전압이 촉매로 인해 표면에 형성된 산소 이온을 선별적으로 분리합니다.” 마이클 헥트 박사의 설명이다.”</p>
+    </header>
+  </section>
+
+  <section class="scene two-3">
+    <img src="mars-f.jpg" id="t4">
+    <header id="txt4">
+      <h1>3. 식량</h1><p>“NASA는 화성의 표토와 유사하다고 판별되는 하와이와 애리조나의 흙을 네덜란드의 재배업자들에게 제공했다. 대략 4200종의 식물을 씨앗부터 재배했는데, 화성의 토양 조건을 모방한 흙에 심은 씨앗은 전부 싹이 텄다. 예상대로 화성과 유사하게 수분을 잘 흡수하는 토양에서는 크레스, 토마토, 호밀, 당근 등이 무성하게 자랐다. 캐나다의 데번 아일랜드와 유타의 마스 소사이어티 온실을 비롯하여 다른 여러 곳에서도 실험이 계속되고 있다. 인간이 아무리 화성에서 성공적으로 작물을 재배한다고 해도, 화성 이주 초기에는 직접 재배한 식재류가 전체 식량의 극히 일부분만을 자치할 것이다. 대부분의 식량은 지구에서 공수해야 한다.” .솔직히 말해서 화성에서 식량의 10퍼센트만 재배할 수 있어도 성공적인 출발일 겁니다.” 그 이유 중 하나는 생육상을 비롯하여 식량 재배에 필요한 장치가 질량과 에너지 소비 면에서 상당히 부담되기 때문이다.”</p>
+    </header>
+  </section>
+
+  <section class="scene two-4">
+    <img src="mars-p.jpg" id="t5">
+    <header id="txt5">
+      <h1>4. 거주지와 의복</h1><p>“주거지에 대한 전략은 경험이 쌓이며 비약적으로 발전하게 된다. 역사를 되돌아볼 때 인간은 주변에 있는 재료로 특정 환경에 적합한 은신처를 만들어내며 주변 상황에 현명하게 적응해왔다. 화성도 예외는 아니겠지만, 초기 정착민들은 복사선을 확실히 차단하기 위해 동굴이나 지면의 갈라진 틈, 또는 용암 동굴에서 지내야 할 것이다. 결국 화성이 지구와 비슷한 환경으로 바뀌면 높은 대기 밀도가 복사선으로 인한 피해를 어느 정도 상쇄시킬 것이다. 의복도 정착민들을 복사선과 추위에서 보호하는 데 중요한 역할을 한다. 화성에는 의복으로만 해결 가능한 독특한 문제가 있는데, 바로 낮은 기압이다. 기압이 지구의 100분의 1에 불과한 화성에서는 몸 밖으로 밀어내는 힘을 눌러줄 여압복(PRESSURE SUIT) 없이는 오래 살아남을 수 없다. 우리는 그토록 생존에 적대적인 환경에서 어떻게 살 수 있을까? 그 해답은 대기의 밀도를 높일 수 있는 온난화 기술의 개발에 있다. 한마디로 화성이라는 행성 전체를 지구와 비슷한 환경으로 개량하는 것이다.” (책 ‘TED 화성 이주 프로젝트’, 스티븐 L 퍼트라넥 저)</p>
+    </header>
+  </section>        
+
+  <section class="scene three">
+    <header>
+      <div id="four-1" style="width: 300px; height: 300px; color:#303; position: absolute; margin-left: 300px;"> 
+      </div>
+      <h1>화성 이주 관련 기사</h1>Mars Migration Articles
+    </header>
+  </section>
+
+  <section class="scene four">
+    <img src="at-1.jpg" style="margin:0 auto; position: relative; display: block; width: 500px;" id="t6"><a href="https://www.businessinsider.com/elon-musk-spacex-mars-plan-timeline-2018-10" title="mars-article">
+    <div id="txt6">
+      <h1 style="line-height: 1.5em; color: white; font-size: 4em;">
+      Elon Musk says SpaceX is on track to launch people to Mars within 6 years<br>— here's the full timeline of his plans to populate the red planet
+      </a>
+      </h1>
+    </div>
+  </section>
+
+
+<div class="circle" id="rrr"></div>
+
+<div id="monitor" style="color: black"></div>
+
+<script type="text/javascript">
+
+    for(var i=0; i<50; i++){
+      var b = rrr.cloneNode(true);
+      b.id = i;
+      b.style.left = Math.random()*1450+"px";
+       // b.style.height = Math.random()*30+"px";
+      b.style.animationDuration = Math.random()*20 +"s";
+      // b.style.animationDelay =+"s";
+      // b.style.background = randomColor();
+      document.body.appendChild(b);
+    }
+
+  function randomBH(min, max) {
+    min = Math.ceil(min);
+    max = Math.floor(max);
+    return Math.floor(Math.random() * (max - min + 5)) + min;
+  }
+</script>
+
+  <script type="text/javascript">
+  window.onscroll = function(){
+    var t = document.documentElement.scrollTop + document.body.scrollTop;
+    monitor.innerHTML = t;
+
+    if(t > 1000){
+      t2.style.animation = "ri 1.5s forwards";
+      txt2.style.animation = "tt 1s forwards";
+    }else{
+      t2.style.animation = "";      
+      txt2.style.animation = "";
+    }    
+
+    if(t > 1800){
+      t3.style.animation = "le 1.5s forwards";
+      txt3.style.animation = "tt 1s forwards";
+    }else{
+      t3.style.animation = "";
+      txt3.style.animation = "";
+    }
+
+    if(t > 2600){
+      t4.style.animation = "ri 1.5s forwards"
+      txt4.style.animation = "tt 1s forwards";
+    }else{
+      t4.style.animation = "";
+      txt4.style.animation = "";
+    }
+
+    if(t > 3400){
+      t5.style.animation = "le 1.5s forwards";
+      txt5.style.animation = "tt 1s forwards";
+    }else{
+      t5.style.animation = "";
+      txt5.style.animation = "";
+    }
+
+    if(t > 5000){
+      t6.style.animation = "ro 2s forwards";
+      txt6.style.animation = "tt 1s forwards";
+    }else{
+      t6.style.animation = "";
+      txt6.style.animation = "";
+    }              
+//    t2.style.animation = "ro 1s infinite";
+    
+//    if(t > 200){txt2.style.left = "300px";}
+  }
+  </script>
+
+  <footer>
+    <p>2019&copy;고병석. all rights reserved.</p>
+  </footer>   
+</body>
+
+</html>
